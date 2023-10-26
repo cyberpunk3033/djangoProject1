@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <header>
+   Заголовок со страницы base
+
+  </header>
+
+  <nav>
+      Меню со страницы base
+    <ul>
+  <li>Microsoft</li>
+  <li>Google</li>
+  <li>Apple</li>
+  <li>IBM</li>
+</ul>
+  </nav>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer>
+    {% block footer %}
+    {% endblock %}
+  </footer>
+<div>
+    Съешь ещё этих мягких французских булок, да выпей же чаю
+</div>
+</html>
